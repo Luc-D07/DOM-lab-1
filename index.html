@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Lab 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="total">Total: $0.00</div>
+    <button class = "button lime-cola" data-price="2.00"> LIME COLA $2.00</button>
+    <button class = "button salted-peanuts" data-price="3.00"> SALTED PEANUT $3.00</button>
+    <button class = "button chocolate-bar" data-price="4.00"> CHOCOLATE BAR $4.00</button>
+    <button class = "button fruit-gummies" data-price="6.00"> FRUIT GUMMIES $6.00</button>
+
+    
+
+    <form class="coin-form">
+        <label for="amount">How many?</label>
+        <input type="number" name="amount" id="amount">
+        <label for="coin">Which coin?</label>
+       <select name="coin-type" id="coin-type">
+           <option value="none"></option>
+           <option class="circle quarter" value="quarter">Quarter</option>
+           <option class="circle dime" min="0" value="dime">Dime</option>
+           <option class="circle nickel" value="nickel">Nickel</option>
+           <option class="circle penny" value="penny">Penny</option>
+       </select>
+       <button class="make-money">Make Money</button>
+    </form>
+    <div class="coin-container"></div>
+
+    <div class="lightbulb">Light Bulb</div>
+    <button class="light-button on">On</button>
+    <button class="light-button off">Off</button>
+    <button class="light-button toggle">Toggle</button>
+    <button class="light-button end">End</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
